@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A2157712A2F04B300C45D32 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A2157702A2F04B300C45D32 /* SnapKit */; };
+		5A2157772A2F051F00C45D32 /* CountryDetalisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2157762A2F051F00C45D32 /* CountryDetalisViewController.swift */; };
+		5A2157792A2F054100C45D32 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2157782A2F054100C45D32 /* APICaller.swift */; };
+		5A21577B2A2F056E00C45D32 /* CustomTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21577A2A2F056E00C45D32 /* CustomTableViewCellDelegate.swift */; };
+		5A21577D2A2F058300C45D32 /* ExpandedTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21577C2A2F058300C45D32 /* ExpandedTableViewCellDelegate.swift */; };
+		5A2157802A2F05AC00C45D32 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21577F2A2F05AC00C45D32 /* SDWebImage */; };
+		5A2157822A2F05D800C45D32 /* CountryDetalisDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2157812A2F05D800C45D32 /* CountryDetalisDataModel.swift */; };
+		5A2157842A2F05EF00C45D32 /* CountriesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2157832A2F05EF00C45D32 /* CountriesDataModel.swift */; };
+		5A5C37B72A2F040A00149552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C37B62A2F040A00149552 /* AppDelegate.swift */; };
+		5A5C37B92A2F040A00149552 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C37B82A2F040A00149552 /* SceneDelegate.swift */; };
+		5A5C37BB2A2F040A00149552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C37BA2A2F040A00149552 /* ViewController.swift */; };
+		5A5C37BE2A2F040A00149552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C37BC2A2F040A00149552 /* Main.storyboard */; };
+		5A5C37C12A2F040A00149552 /* Geographic_atlas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C37BF2A2F040A00149552 /* Geographic_atlas.xcdatamodeld */; };
+		5A5C37C32A2F040D00149552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C37C22A2F040D00149552 /* Assets.xcassets */; };
+		5A5C37C62A2F040D00149552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C37C42A2F040D00149552 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A2157762A2F051F00C45D32 /* CountryDetalisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetalisViewController.swift; sourceTree = "<group>"; };
+		5A2157782A2F054100C45D32 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		5A21577A2A2F056E00C45D32 /* CustomTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		5A21577C2A2F058300C45D32 /* ExpandedTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		5A2157812A2F05D800C45D32 /* CountryDetalisDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetalisDataModel.swift; sourceTree = "<group>"; };
+		5A2157832A2F05EF00C45D32 /* CountriesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataModel.swift; sourceTree = "<group>"; };
+		5A5C37B32A2F040A00149552 /* Geographic atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geographic atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5C37B62A2F040A00149552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A5C37B82A2F040A00149552 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A5C37BA2A2F040A00149552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A5C37BD2A2F040A00149552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A5C37C02A2F040A00149552 /* Geographic_atlas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Geographic_atlas.xcdatamodel; sourceTree = "<group>"; };
+		5A5C37C22A2F040D00149552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A5C37C52A2F040D00149552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A5C37C72A2F040D00149552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A5C37B02A2F040A00149552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2157802A2F05AC00C45D32 /* SDWebImage in Frameworks */,
+				5A2157712A2F04B300C45D32 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A2157722A2F04D100C45D32 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A5C37BA2A2F040A00149552 /* ViewController.swift */,
+				5A2157762A2F051F00C45D32 /* CountryDetalisViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A2157732A2F04DD00C45D32 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5A2157782A2F054100C45D32 /* APICaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5A2157742A2F04EE00C45D32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A2157812A2F05D800C45D32 /* CountryDetalisDataModel.swift */,
+				5A2157832A2F05EF00C45D32 /* CountriesDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A2157752A2F04F900C45D32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A21577A2A2F056E00C45D32 /* CustomTableViewCellDelegate.swift */,
+				5A21577C2A2F058300C45D32 /* ExpandedTableViewCellDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A5C37AA2A2F040A00149552 = {
+			isa = PBXGroup;
+			children = (
+				5A5C37B52A2F040A00149552 /* Geographic atlas */,
+				5A5C37B42A2F040A00149552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A5C37B42A2F040A00149552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A5C37B32A2F040A00149552 /* Geographic atlas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A5C37B52A2F040A00149552 /* Geographic atlas */ = {
+			isa = PBXGroup;
+			children = (
+				5A2157752A2F04F900C45D32 /* Views */,
+				5A2157742A2F04EE00C45D32 /* Models */,
+				5A2157732A2F04DD00C45D32 /* Managers */,
+				5A2157722A2F04D100C45D32 /* Controllers */,
+				5A5C37B62A2F040A00149552 /* AppDelegate.swift */,
+				5A5C37B82A2F040A00149552 /* SceneDelegate.swift */,
+				5A5C37BC2A2F040A00149552 /* Main.storyboard */,
+				5A5C37C22A2F040D00149552 /* Assets.xcassets */,
+				5A5C37C42A2F040D00149552 /* LaunchScreen.storyboard */,
+				5A5C37C72A2F040D00149552 /* Info.plist */,
+				5A5C37BF2A2F040A00149552 /* Geographic_atlas.xcdatamodeld */,
+			);
+			path = "Geographic atlas";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A5C37B22A2F040A00149552 /* Geographic atlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5C37CA2A2F040D00149552 /* Build configuration list for PBXNativeTarget "Geographic atlas" */;
+			buildPhases = (
+				5A5C37AF2A2F040A00149552 /* Sources */,
+				5A5C37B02A2F040A00149552 /* Frameworks */,
+				5A5C37B12A2F040A00149552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geographic atlas";
+			packageProductDependencies = (
+				5A2157702A2F04B300C45D32 /* SnapKit */,
+				5A21577F2A2F05AC00C45D32 /* SDWebImage */,
+			);
+			productName = "Geographic atlas";
+			productReference = 5A5C37B32A2F040A00149552 /* Geographic atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A5C37AB2A2F040A00149552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5A5C37B22A2F040A00149552 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 5A5C37AE2A2F040A00149552 /* Build configuration list for PBXProject "Geographic atlas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A5C37AA2A2F040A00149552;
+			packageReferences = (
+				5A21576F2A2F04B300C45D32 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5A21577E2A2F05AC00C45D32 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 5A5C37B42A2F040A00149552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A5C37B22A2F040A00149552 /* Geographic atlas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A5C37B12A2F040A00149552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5C37C62A2F040D00149552 /* LaunchScreen.storyboard in Resources */,
+				5A5C37C32A2F040D00149552 /* Assets.xcassets in Resources */,
+				5A5C37BE2A2F040A00149552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A5C37AF2A2F040A00149552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5C37BB2A2F040A00149552 /* ViewController.swift in Sources */,
+				5A2157792A2F054100C45D32 /* APICaller.swift in Sources */,
+				5A2157842A2F05EF00C45D32 /* CountriesDataModel.swift in Sources */,
+				5A5C37B72A2F040A00149552 /* AppDelegate.swift in Sources */,
+				5A5C37C12A2F040A00149552 /* Geographic_atlas.xcdatamodeld in Sources */,
+				5A2157772A2F051F00C45D32 /* CountryDetalisViewController.swift in Sources */,
+				5A21577D2A2F058300C45D32 /* ExpandedTableViewCellDelegate.swift in Sources */,
+				5A2157822A2F05D800C45D32 /* CountryDetalisDataModel.swift in Sources */,
+				5A21577B2A2F056E00C45D32 /* CustomTableViewCellDelegate.swift in Sources */,
+				5A5C37B92A2F040A00149552 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A5C37BC2A2F040A00149552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5C37BD2A2F040A00149552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A5C37C42A2F040D00149552 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5C37C52A2F040D00149552 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A5C37C82A2F040D00149552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A5C37C92A2F040D00149552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A5C37CB2A2F040D00149552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geographic atlas/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SELF.Geographic-atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5C37CC2A2F040D00149552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geographic atlas/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SELF.Geographic-atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A5C37AE2A2F040A00149552 /* Build configuration list for PBXProject "Geographic atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5C37C82A2F040D00149552 /* Debug */,
+				5A5C37C92A2F040D00149552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5C37CA2A2F040D00149552 /* Build configuration list for PBXNativeTarget "Geographic atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5C37CB2A2F040D00149552 /* Debug */,
+				5A5C37CC2A2F040D00149552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A21576F2A2F04B300C45D32 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		5A21577E2A2F05AC00C45D32 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A2157702A2F04B300C45D32 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A21576F2A2F04B300C45D32 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5A21577F2A2F05AC00C45D32 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A21577E2A2F05AC00C45D32 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5A5C37BF2A2F040A00149552 /* Geographic_atlas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A5C37C02A2F040A00149552 /* Geographic_atlas.xcdatamodel */,
+			);
+			currentVersion = 5A5C37C02A2F040A00149552 /* Geographic_atlas.xcdatamodel */;
+			path = Geographic_atlas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A5C37AB2A2F040A00149552 /* Project object */;
+}
