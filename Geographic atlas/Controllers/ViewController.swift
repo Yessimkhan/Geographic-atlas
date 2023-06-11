@@ -82,16 +82,6 @@ class ViewController: UIViewController {
             myTableView.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .red), animation: nil, transition: .crossDissolve(0.25))
         }
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        print("will disappear")
-        super.viewWillDisappear(animated)
-
-        // Hide skeleton view when the view is about to disappear
-        myTableView.hideSkeleton()
-        skeletonViewVisible = false
-    }
-
-    
 }
 
 

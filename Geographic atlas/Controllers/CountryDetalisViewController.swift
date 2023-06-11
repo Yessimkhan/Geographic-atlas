@@ -261,9 +261,7 @@ extension CountryDetalisViewController {
         backButton.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(70)
             make.leading.equalToSuperview().inset(20)
-//            make.height.width.equalTo(30)
         }
-        
         Title.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(59)
             make.centerX.equalToSuperview()
@@ -273,7 +271,6 @@ extension CountryDetalisViewController {
             make.top.equalTo(headerView.snp.bottom)
             make.bottom.leading.trailing.equalToSuperview()
         }
-        
         FlagImage.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(24)
             make.height.equalTo(195)
