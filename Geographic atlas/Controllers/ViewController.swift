@@ -7,12 +7,13 @@
 
 import UIKit
 import SnapKit
+import SkeletonView
 
 
 
 class ViewController: UIViewController {
-
     
+    var skeletonViewVisible = true
     private var countries: [CountryElement] = [CountryElement]()
     private var countriesByContinent: [String: [CountryElement]] = [:]
     
@@ -62,13 +63,34 @@ class ViewController: UIViewController {
                 case .success(let countries):
                     self?.countries = countries
                     self?.countriesByContinent = Dictionary(grouping: countries, by: { $0.continents.first ?? "" })
+                    self?.myTableView.stopSkeletonAnimation()
+                    self?.view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+                    self?.skeletonViewVisible = false
+                    self?.myTableView.reloadData()
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
-                self?.myTableView.reloadData()
+                
             }
         }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("didAppeat")
+        if skeletonViewVisible == true {
+            myTableView.isSkeletonable = true
+            myTableView.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .red), animation: nil, transition: .crossDissolve(0.25))
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print("will disappear")
+        super.viewWillDisappear(animated)
+
+        // Hide skeleton view when the view is about to disappear
+        myTableView.hideSkeleton()
+        skeletonViewVisible = false
+    }
+
     
 }
 
@@ -102,13 +124,18 @@ extension ViewController{
 
 
 // MARK: - TableView DataSource and Delegate Methods
-extension ViewController: UITableViewDelegate, UITableViewDataSource   {
+extension ViewController: UITableViewDelegate, SkeletonTableViewDataSource   {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
             return countriesByContinent.keys.count
     }
-    
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return CustomTableViewCell.identifier
+    }
+    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let continent = Array(countriesByContinent.keys.sorted())[section]
         return countriesByContinent[continent]?.count ?? 0
@@ -128,6 +155,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource   {
         return 30
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard countriesByContinent.count != 0 else { return 84 }
         let continent = Array(countriesByContinent.keys.sorted())[indexPath.section]
         if let countriesInSection = countriesByContinent[continent], countriesInSection.count > indexPath.row {
             let country = countriesInSection[indexPath.row]

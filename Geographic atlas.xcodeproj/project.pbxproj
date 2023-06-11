@@ -22,6 +22,7 @@
 		5A5C37C12A2F040A00149552 /* Geographic_atlas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C37BF2A2F040A00149552 /* Geographic_atlas.xcdatamodeld */; };
 		5A5C37C32A2F040D00149552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C37C22A2F040D00149552 /* Assets.xcassets */; };
 		5A5C37C62A2F040D00149552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C37C42A2F040D00149552 /* LaunchScreen.storyboard */; };
+		5AE7E56D2A358B7300EC2B8B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 5AE7E56C2A358B7300EC2B8B /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A2157802A2F05AC00C45D32 /* SDWebImage in Frameworks */,
+				5AE7E56D2A358B7300EC2B8B /* SkeletonView in Frameworks */,
 				5A2157712A2F04B300C45D32 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +145,7 @@
 			packageProductDependencies = (
 				5A2157702A2F04B300C45D32 /* SnapKit */,
 				5A21577F2A2F05AC00C45D32 /* SDWebImage */,
+				5AE7E56C2A358B7300EC2B8B /* SkeletonView */,
 			);
 			productName = "Geographic atlas";
 			productReference = 5A5C37B32A2F040A00149552 /* Geographic atlas.app */;
@@ -175,6 +178,7 @@
 			packageReferences = (
 				5A21576F2A2F04B300C45D32 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				5A21577E2A2F05AC00C45D32 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5AE7E56B2A358B7300EC2B8B /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 5A5C37B42A2F040A00149552 /* Products */;
 			projectDirPath = "";
@@ -446,6 +450,14 @@
 				kind = branch;
 			};
 		};
+		5AE7E56B2A358B7300EC2B8B /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +470,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5A21577E2A2F05AC00C45D32 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		5AE7E56C2A358B7300EC2B8B /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AE7E56B2A358B7300EC2B8B /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 
