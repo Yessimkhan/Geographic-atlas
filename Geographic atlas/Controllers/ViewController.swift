@@ -50,6 +50,7 @@ class ViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        print("hello")
         super.viewDidLoad()
         myTableView.dataSource = self
         myTableView.delegate = self
